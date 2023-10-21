@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Netflix",
+        "logo_url": "https://i.ibb.co/rM4ff39/boliviainteligente-vba5nqy-Q4-CE-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Amazon Prime Video",
+        "logo_url": "https://i.ibb.co/23t0hzg/boliviainteligente-ebm-Vk-FIq-NLA-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Hulu",
+        "logo_url": "https://i.ibb.co/FV4yrZp/boliviainteligente-rn-Ioa-Zey7a-U-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Disney+",
+        "logo_url": "https://i.ibb.co/sv6mdwN/boliviainteligente-zh-IFru-QW6q-Y-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": "HBO Max",
+        "logo_url": "https://i.ibb.co/kgfWKJ4/boliviainteligente-Jrozgl-Glz7w-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Apple TV+",
+        "logo_url": "https://i.ibb.co/W6sYWW1/boliviainteligente-0rsjx-D6-Ai7-Q-unsplash.jpg"
+    }
+]
