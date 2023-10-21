@@ -15,8 +15,8 @@ const Brands = () => {
   }, []);
 
   return (
-    <div className="py-5 mx-auto  max-w-[1600px]">
-      <div className="text-center">
+    <div className=" mx-auto my-20  max-w-[1600px]">
+      <div className="text-center my-14">
         <h2 className="text-4xl font-bold mb-3">
           Explore our wide variety of categories
         </h2>

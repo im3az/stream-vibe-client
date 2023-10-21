@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
-    <>
+    <div className="lg:flex rounded-md px-4 py-2 bg-[#1F1F1F] border border-[#2A323C] gap-x-5">
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
@@ -15,10 +15,10 @@ const Navbar = () => {
       <li>
         <NavLink to="/login">Login</NavLink>
       </li>
-    </>
+    </div>
   );
   return (
-    <div className="navbar text-white bg-[#1E1E1E]">
+    <div className="navbar text-white font-semibold bg-[#1D232A]">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -44,9 +44,9 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Health fits</a>
+        <a className="btn btn-primary normal-case text-xl"><img src="https://i.ibb.co/ZHTVVTP/Stream-Vibe.png" alt="" /></a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex ">
         <ul className="menu menu-horizontal px-1 text-lg gap-x-12">
           {navLinks}
         </ul>
