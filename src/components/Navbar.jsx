@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
-    <div className="lg:flex rounded-md px-4 py-2 bg-[#1F1F1F] border border-[#2A323C] gap-x-5">
+    <div className="lg:flex rounded-lg px-4 py-3 bg-[#1F1F1F] border border-[#2A323C] gap-x-5">
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
