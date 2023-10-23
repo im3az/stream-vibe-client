@@ -1,19 +1,39 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
-    <div className="lg:flex rounded-lg px-4 py-3 bg-[#1F1F1F] border border-[#2A323C] gap-x-5">
+    <div className="lg:flex text-white rounded-lg px-4 py-1 bg-[#6423E6]  gap-x-5">
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          className="transition-colors hover:bg-white hover:text-black"
+          to="/"
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/addMovies">Add Movies</NavLink>
+        <NavLink
+          className="transition-colors hover:bg-white hover:text-black "
+          to="/addMovies"
+        >
+          Add Movies
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/myCart">My Cart</NavLink>
+        <NavLink
+          className="transition-colors hover:bg-white hover:text-black"
+          to="/myCart"
+        >
+          My Cart
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink
+          className="transition-colors hover:bg-white hover:text-black"
+          to="/login"
+        >
+          Login
+        </NavLink>
       </li>
     </div>
   );
@@ -39,17 +59,17 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52"
           >
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-primary normal-case text-xl"><img src="https://i.ibb.co/ZHTVVTP/Stream-Vibe.png" alt="" /></a>
+        <Link to="/" className="btn btn-primary normal-case text-xl">
+          <img src="https://i.ibb.co/ZHTVVTP/Stream-Vibe.png" alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex ">
-        <ul className="menu menu-horizontal px-1 text-lg gap-x-12">
-          {navLinks}
-        </ul>
+        <ul className="menu  text-lg ">{navLinks}</ul>
       </div>
       <div className="navbar-end"></div>
     </div>
