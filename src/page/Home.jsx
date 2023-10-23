@@ -3,9 +3,9 @@ import Brands from "../components/Brands";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Banner></Banner>
-      <div className="mx-auto">
+      <div className="mx-auto ">
         <Brands></Brands>
       </div>
     </div>

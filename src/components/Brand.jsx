@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const Brand = ({ brand }) => {
   const { name, logo_url, brandName } = brand || {};
   return (
@@ -8,7 +9,7 @@ const Brand = ({ brand }) => {
         <div>
           <img src={logo_url} className="w-full object-cover " alt="" />
         </div>
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-black"></div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-t "></div>
         <div className="absolute flex justify-between items-center inset-x-0 bottom-0 z-20 p-4">
           <h3 className="text-xl font-medium text-white">{name}</h3>
           <Link to={`/movie/${brandName}`}>

@@ -2,7 +2,7 @@
     {
         "image": "https://i.ibb.co/yh4ttcN/6f86e8f1508a97e45fa87f2958026bda.png",
         "name": "Wanda Vision",
-        "brand name": "Disney",
+        "brand": "Disney",
         "type": "Action",
         "price": 120,
         "rating": 4,
@@ -11,7 +11,7 @@
     {
         "image": "https://i.ibb.co/g3yY0Dy/65fbe83905d0f18bff51083c9d197263.png",
         "name": "Captain Marvel",
-        "brand name": "Disney",
+        "brand": "Disney",
         "type": "Comedy",
         "price": 90,
         "rating": 4,
@@ -20,7 +20,7 @@
     {
         "image": "https://i.ibb.co/FXvsKBS/5592361a41fd2c24607f458dc82f5fbf.png",
         "name": "Harry Potter",
-        "brand name": "Disney",
+        "brand": "Disney",
         "type": "Drama",
         "price": 140,
         "rating": 4,
@@ -29,7 +29,7 @@
     {
         "image": "https://i.ibb.co/hXV0pMW/a93ed93289be8e0f72390bbca289eecd.png",
         "name": "Black Panther",
-        "brand name": "Disney",
+        "brand": "Disney",
         "type": "Science Fiction",
         "price": 130,
         "rating": 4,
@@ -38,7 +38,7 @@
     {
         "image": "https://i.ibb.co/Fs5x1Qf/31b178584a2057bbb5557c090295b765.png",
         "name": "Moonlight",
-        "brand name": "HBO",
+        "brand": "HBO",
         "type": "Action",
         "price": 120,
         "rating": 3,
@@ -47,7 +47,7 @@
     {
         "image": "https://i.ibb.co/KWYRjGg/bohemian-rhapsody.jpg",
         "name": "Bohemian Rhapsody",
-        "brand name": "HBO",
+        "brand": "HBO",
         "type": "Comedy",
         "price": 90,
         "rating": 5,
@@ -56,7 +56,7 @@
     {
         "image": "https://i.ibb.co/VjxWWd7/d559d75f572c2036b7022d88d0943ef5.png",
         "name": "You",
-        "brand name": "HBO",
+        "brand": "HBO",
         "type": "Drama",
         "price": 140,
         "rating": 2,
@@ -65,7 +65,7 @@
     {
         "image": "https://i.ibb.co/SRt1nwH/875b705634c5316fb7022f9da941bc89.png",
         "name": "Jupiter's Legacy",
-        "brand name": "HBO",
+        "brand": "HBO",
         "type": "Science Fiction",
         "price": 130,
         "rating": 5,
@@ -74,7 +74,7 @@
     {
         "image": "https://i.ibb.co/mqZQgLQ/2def46b923a7170f094fdefa7712dd78.png",
         "name": "Central Intelligence",
-        "brand name": "Hulu",
+        "brand": "Hulu",
         "type": "Action",
         "price": 120,
         "rating": 1,
@@ -83,7 +83,7 @@
     {
         "image": "https://i.ibb.co/XWfTRpM/92c301027ce44676e87103bf2e61d5a5.png",
         "name": "Shadow bone",
-        "brand name": "Hulu",
+        "brand": "Hulu",
         "type": "Comedy",
         "price": 90,
         "rating": 5,
@@ -92,7 +92,7 @@
     {
         "image": "https://i.ibb.co/rvpJ6zZ/724ee31a57bb49f721b164f6bc4f707f.png",
         "name": "Jungle cruise",
-        "brand name": "Hulu",
+        "brand": "Hulu",
         "type": "Drama",
         "price": 140,
         "rating": 3,
@@ -101,7 +101,7 @@
     {
         "image": "https://i.ibb.co/qB1Sxs6/b6dcbdec23b03302374bc86903f034bf.png",
         "name": "The human centipede",
-        "brand name": "Hulu",
+        "brand": "Hulu",
         "type": "Science Fiction",
         "price": 130,
         "rating": 4,
@@ -110,7 +110,7 @@
     {
         "image": "https://i.ibb.co/N2P6J9B/5a5dab16addcff652a11945988d43f90.png",
         "name": "1899",
-        "brand name": "Netflix",
+        "brand": "Netflix",
         "type": "Action",
         "price": 120,
         "rating": 4,
@@ -119,7 +119,7 @@
     {
         "image": "https://i.ibb.co/hsyf9dY/6b236b9166e6ac6daa8bc0504468ef60.png",
         "name": "Locke & Key",
-        "brand name": "Netflix",
+        "brand": "Netflix",
         "type": "Comedy",
         "price": 90,
         "rating": 4,
@@ -128,7 +128,7 @@
     {
         "image": "https://i.ibb.co/PcQvTZc/45cf53372ec7d06e4e2671c64ad4b14c.png",
         "name": "Money Heist Korea",
-        "brand name": "Netflix",
+        "brand": "Netflix",
         "type": "Drama",
         "price": 140,
         "rating": 4,
@@ -137,7 +137,7 @@
     {
         "image": "https://i.ibb.co/9vTvyK7/85ae7888bc0e52f172ffedeba0dc2ce7.png",
         "name": "Stranger Things",
-        "brand name": "Netflix",
+        "brand": "Netflix",
         "type": "Science Fiction",
         "price": 130,
         "rating": 4,
@@ -146,7 +146,7 @@
     {
         "image": "https://i.ibb.co/7XBNRfX/4ccb1e1f3fcd0b34dfee511f0b1ca838.png",
         "name": "The Blind",
-        "brand name": "Prime",
+        "brand": "Prime",
         "type": "Action",
         "price": 120,
         "rating": 3,
@@ -155,7 +155,7 @@
     {
         "image": "https://i.ibb.co/Yfs5tfv/a52759c832de761477d479d7cf0c53e5.png",
         "name": "The Batman",
-        "brand name": "Prime",
+        "brand": "Prime",
         "type": "Comedy",
         "price": 90,
         "rating": 5,
@@ -164,7 +164,7 @@
     {
         "image": "https://i.ibb.co/4R2QDss/MV5-BOTVh-Mz-Yx-Njgt-Yz-Yw-OC00-MGIw-LWJm-ZGEt-Mjgw-Mzgx-MWUw-Nm-Rh-Xk-Ey-Xk-Fqc-Gde-QXVy-Njg2-Nj-Qw.jpg",
         "name": "Dora and the Lost City of Gold",
-        "brand name": "Prime",
+        "brand": "Prime",
         "type": "Drama",
         "price": 140,
         "rating": 4,
@@ -173,7 +173,7 @@
     {
         "image": "https://i.ibb.co/QDHvygL/MV5-BZTli-NWJh-M2-Yt-NDc1-MC00-YTk1-LWE2-MGYt-Zm-E4-M2-Y5-ODdl-Nz-Qz-Xk-Ey-Xk-Fqc-Gde-QXVy-Mz-Y0-MTE.jpg",
         "name": "Us",
-        "brand name": "Prime",
+        "brand": "Prime",
         "type": "Science Fiction",
         "price": 130,
         "rating": 4,
