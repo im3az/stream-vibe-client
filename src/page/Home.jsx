@@ -3,7 +3,7 @@ import Brands from "../components/Brands";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="bg-[#EBE8E2]">
       <Banner></Banner>
       <div className="mx-auto ">
         <Brands></Brands>

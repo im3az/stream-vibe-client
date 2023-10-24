@@ -6,7 +6,7 @@ import Slider from "./Slider";
 const BrandMovie = () => {
   const loadedMovies = useLoaderData();
 
-  const [showMovies, setShowMovies] = useState(loadedMovies);
+  const [showMovies, setShowMovies] = useState([]);
 
   const [loadedSlider, setLoadedSlider] = useState([]);
 
@@ -48,8 +48,8 @@ const BrandMovie = () => {
   // console.log(loadedSlider);
 
   return (
-    <div className="mx-auto text-center">
-      <div className="mx-5 mt-5">
+    <div className="mx-auto text-center ">
+      <div className="pt-5">
         {slider?.map((slide) => (
           <Slider key={slide.brand} slide={slide}></Slider>
         ))}

@@ -12,7 +12,7 @@ const Brand = ({ brand }) => {
         <div className="absolute inset-0 z-10 bg-gradient-to-t "></div>
         <div className="absolute flex justify-between items-center inset-x-0 bottom-0 z-20 p-4">
           <h3 className="text-xl font-medium text-white">{name}</h3>
-          <Link to={`/movie/${brandName}`}>
+          <Link to={`/movies/${brandName}`}>
             <button className=" text-white text-opacity-80  opacity-0 group-hover:opacity-100 transition-opacity  btn btn-primary">
               Watch
             </button>
