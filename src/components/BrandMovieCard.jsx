@@ -69,9 +69,9 @@ const BrandMovieCard = ({ movies }) => {
             </div>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-evenly">
             <button className="btn btn-primary w-1/4">Update</button>
-            <button className="btn btn-primary w-2/4">Add to cart</button>
+            <button className="btn btn-primary w-1/4">Details</button>
           </div>
         </div>
       </div>

@@ -1,0 +1,74 @@
+[
+    {
+        "brand": "Apple",
+        "movie1": "Monarch",
+        "movie2": "Luck",
+        "movie3": "Tetris",
+        "img1": "https://i.ibb.co/3vgBH3R/101323-Trailer-Series-Monarch-Legacy-Monsters-Big-Image-01-big-image-post-jpg-slideshow-large.jpghttps://i.ibb.co/3vgBH3R/101323-Trailer-Series-Monarch-Legacy-Monsters-Big-Image-01-big-image-post-jpg-slideshow-large.jpg",
+        "img2": "https://i.ibb.co/JKMgzZw/MV5-BOGYz-YWE3-YTAt-Mjg2-Ni00-Mz-Rk-LWEw-YWIt-OWM1-Mj-I3-Yzhj-YTYy-Xk-Ey-Xk-Fqc-Gde-QXVy-MTUz-MTg2-O.jpg",
+        "img3": "https://i.ibb.co/bXxx3yW/Tetris-KV.jpg",
+        "details1": "A British costume drama about Henry VIII and his six wives, told from the perspective of a night when he is injured and haunted by his past.",
+        "details2": "An animated fantasy comedy about a girl who travels to the Land of Luck, where she teams up with the magical creatures there to turn her luck around.",
+        "details3": "A biographical thriller about the race to license and patent the video game Tetris from Russia in the late 1980s during the Cold War."
+    },
+    {
+        "brand": "Disney",
+        "movie1": "The Changeling",
+        "movie2": "Soul",
+        "movie3": "Avengers Endgame",
+        "img1": "https://i.ibb.co/ZgZfkg4/5e216cc580dcdd1d7b4c005f0d8f07e0.jpg",
+        "img2": "https://i.ibb.co/F7nnv2J/334df9c564371769a0e6ff93a65ecc6928d420b26eabd4b6e5a5915b33de240a.jpg",
+        "img3": "https://i.ibb.co/7bgvsh7/be24dce2aacc1df0dc6b995dc86cd61ab2e2746902ab87ece79376ca892f860e.jpg",
+        "details1": "A Canadian supernatural horror film about a composer who moves into a haunted mansion after losing his family in a car crash, and uncovers a dark secret involving a murdered child.",
+        "details2": "An animated comedy-drama about a jazz musician who falls into a coma and tries to reunite his soul and body with the help of a cynical soul in training.",
+        "details3": "A superhero film that concludes the Infinity Saga of the Marvel Cinematic Universe, in which the surviving Avengers travel back in time to reverse the effects of Thanos snap and restore balance to the universe."
+    },
+    {
+        "brand": "HBO",
+        "movie1": "Dune",
+        "movie2": "Dunkirk",
+        "movie3": "Godzilla vs. Kong",
+        "img1": "https://i.ibb.co/ngbWGpZ/dune-2021-movies-zendaya-javier-bardem-josh-brolin-rebecca-4000x2490-6244.jpg",
+        "img2": "https://i.ibb.co/Nm3xhpQ/peakpx.jpg",
+        "img3": "https://i.ibb.co/st3FDTw/r3kqajze.png",
+        "details1": "A science fiction film based on the novel by Frank Herbert, in which a young man travels to a desert planet that holds a valuable resource and becomes involved in a conflict between rival factions.",
+        "details2": "A war film that depicts the evacuation of Allied soldiers from Dunkirk, France, during World War II, using three perspectives: land, sea, and air.",
+        "details3": " A monster film that pits Godzilla and Kong against each other, as well as against a hidden threat that endangers their species and humanity."
+    },
+    {
+        "brand": "Hulu",
+        "movie1": "The Lego Movie",
+        "movie2": "A Quiet Place",
+        "movie3": "Parasite",
+        "img1": "https://i.ibb.co/z6m190b/7a7emj17.png",
+        "img2": "https://i.ibb.co/PFC74VY/AQP-Quad-Red-Head-L.jpg",
+        "img3": "https://i.ibb.co/rthbjyb/IMG-3746-scaled.jpg",
+        "details1": "An animated comedy film that follows an ordinary Lego minifigure who is mistaken for the chosen one and joins a group of heroes to stop an evil tyrant from gluing the Lego world together1.",
+        "details2": "A horror film that follows a family who lives in silence to avoid being hunted by creatures that are sensitive to sound.",
+        "details3": "A black comedy thriller film that follows a poor family who schemes to infiltrate a wealthy household by posing as unrelated professionals."
+    },
+    {
+        "brand": "Netflix",
+        "movie1": "Daredevil",
+        "movie2": "Stranger Things",
+        "movie3": "You",
+        "img1": "https://i.ibb.co/NZV3PRC/wp1917128-netflix-wallpapers.jpg",
+        "img2": "https://i.ibb.co/Zm2Sc0Q/wp1917154-netflix-wallpapers.jpg",
+        "img3": "https://i.ibb.co/SXtX8Fw/wp6889318-netflix-series-wallpapers.jpg",
+        "details1": "A superhero film based on the Marvel Comics character, in which a blind lawyer uses his enhanced senses to fight crime as a vigilante at night.",
+        "details2": "A science fiction horror series set in the 1980s, in which a group of kids investigates supernatural events involving a parallel dimension and a telekinetic girl.",
+        "details3": "A psychological thriller series based on the novel by Caroline Kepnes, in which a bookstore manager becomes obsessed with a woman he meets and stalks her using social media."
+    },
+    {
+        "brand": "Prime",
+        "movie1": "Awareness",
+        "movie2": "Blade Runner",
+        "movie3": "Samaritan",
+        "img1": "https://i.ibb.co/dWt652p/51ef07efaad9b9f9b7c83442ca3de3942d256afd2d0076bcc383622f59b77830-UR1920-1080.jpg",
+        "img2": "https://i.ibb.co/yXh3RXJ/bombhaat-movie-posters-01.jpg",
+        "img3": "https://i.ibb.co/QbHrTwf/prime-video-december-2021.jpg",
+        "details1": "A documentary film that explores the concept of awareness and its implications for human consciousness, happiness, and well-being.",
+        "details2": "A neo-noir science fiction film based on the novel by Philip K. Dick, in which a former police officer hunts down rogue androids known as replicants in a dystopian Los Angeles.",
+        "details3": "An action thriller film about a young boy who discovers that a legendary superhero who disappeared 20 years ago is still alive and living next door to him."
+    }
+]
