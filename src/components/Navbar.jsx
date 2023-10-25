@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   const navLinks = (
-    <div className="lg:flex text-white rounded-lg px-4 py-1 bg-[#6423E6]  gap-x-5">
+    <div className="lg:flex text-white rounded-lg px-4 py-1 bg-indigo-800  gap-x-5">
       <li>
         <NavLink
           className="transition-colors hover:bg-white hover:text-black"
@@ -53,7 +53,7 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="navbar text-white font-semibold bg-[#2f343b]">
+    <div className="navbar py-5 text-white font-semibold bg-gray-800">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -87,7 +87,7 @@ const Navbar = () => {
         <ul className="menu  text-lg ">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <div>
+        <div className=" hidden md:block">
           {user ? (
             // <div className="w-10 object-cover mr-2">
             //   <img className="rounded-full" src={user.photoURL} alt="" />
@@ -107,16 +107,12 @@ const Navbar = () => {
                 />
               </div>
               <div>
-                <div className="text-sm font-medium text-secondary-500">
-                  {user.displayName}
-                </div>
-                <div className="text-xs text-secondary-400">
-                  {user.email}
-                </div>
+                <div className="text-sm font-medium ">{user.displayName}</div>
+                <div className="text-xs ">{user.email}</div>
               </div>
             </div>
           ) : (
-            <div className="w-10   mr-2">
+            <div className="w-10 mr-2">
               <img
                 className="rounded-full"
                 src="https://i.ibb.co/8b7zG7B/user.png"
