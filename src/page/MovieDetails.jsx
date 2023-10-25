@@ -30,7 +30,7 @@ const MovieDetails = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-stone-200 ">
+      <div className="hero min-h-screen  ">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={loadedData.image}
