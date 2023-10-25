@@ -3,22 +3,18 @@ const PriceChart = () => {
     <div>
       <section className="relative">
         {/* BG Image  */}
-        <img
-          src="https://uploads-ssl.webflow.com/646f65e37fe0275cfb808405/646f68133fc5cb4e29ed28fa_Get%20Started%20BG.svg"
-          alt=""
-          className="absolute -z-[1] h-full w-full object-cover"
-        />
+        
         {/* Container  */}
         <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
           {/* Component  */}
           <div className="flex flex-col items-center">
             {/* Heading Content  */}
             <div className="mb-8 max-w-3xl text-center md:mb-12 lg:mb-16">
-              <h2 className="mb-4 mt-6 text-3xl font-extrabold text-black md:text-5xl">
+              <h2 className="mb-4 mt-6 text-3xl font-extrabold text-black dark:text-white md:text-5xl">
                 Simple &amp; Affordable Pricing
               </h2>
               <div className="mx-auto mt-4 max-w-[528px]">
-                <p className="text-gray-600 text-xl">
+                <p className="text-gray-600 dark:text-gray-300 text-xl">
                   Simple &amp; fixed pricing. 30 days money-back guarantee
                 </p>
               </div>
