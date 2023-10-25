@@ -22,7 +22,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className="transition-colors hover:bg-white hover:text-black"
-          to="/myCart"
+          to="cart"
         >
           My Cart
         </NavLink>
@@ -71,7 +71,9 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex ">
         <ul className="menu  text-lg ">{navLinks}</ul>
       </div>
-      <div className="navbar-end"></div>
+      <div className="navbar-end">
+        
+      </div>
     </div>
   );
 };

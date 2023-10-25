@@ -24,10 +24,10 @@ const AddMovies = () => {
       image,
     };
 
-    console.log(newMovie);
+    // console.log(newMovie);
 
     // sending data to server
-    fetch("http://localhost:5000/movie", {
+    fetch("http://localhost:5000/movies", {
       method: "POST",
       headers: {
         "content-type": "application/json",

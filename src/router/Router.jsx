@@ -6,6 +6,7 @@ import Error from "../page/Error";
 import BrandMovie from "../components/brandMovie";
 import MovieDetails from "../page/MovieDetails";
 import UpdatePage from "../page/UpdatePage";
+import Cart from "../page/Cart";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
         element: <MovieDetails></MovieDetails>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/details/${params._id}`),
+      },
+      {
+        path: "cart",
+        element: <Cart></Cart>,
+        loader: () => fetch("http://localhost:5000/cart"),
       },
     ],
   },
