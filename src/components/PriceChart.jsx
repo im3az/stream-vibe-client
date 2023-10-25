@@ -10,7 +10,7 @@ const PriceChart = () => {
           <div className="flex flex-col items-center">
             {/* Heading Content  */}
             <div className="mb-8 max-w-3xl text-center md:mb-12 lg:mb-16">
-              <h2 className="mb-4 mt-6 text-3xl font-extrabold text-black dark:text-gray-500 md:text-5xl">
+              <h2 className="mb-4 mt-6 text-3xl font-extrabold  md:text-5xl">
                 Simple &amp; Affordable Pricing
               </h2>
               <div className="mx-auto mt-4 max-w-[528px]">
