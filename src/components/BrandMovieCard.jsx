@@ -82,7 +82,7 @@ const BrandMovieCard = ({ movies }) => {
           </div>
 
           <div className="flex items-center justify-evenly">
-            <Link>
+            <Link to={`/movie/${_id}`}>
               <button className="btn btn-primary">Update</button>
             </Link>
             <Link to={`/details/${_id}`} className="">

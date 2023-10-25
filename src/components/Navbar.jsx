@@ -1,6 +1,21 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+
+  const handleSignOut = () => {
+    logOut()
+      .then()
+      .catch((error) => {
+        console.log(error);
+      });
+    Swal.fire("Logged out");
+  };
+
   const navLinks = (
     <div className="lg:flex text-white rounded-lg px-4 py-1 bg-[#6423E6]  gap-x-5">
       <li>
@@ -72,7 +87,33 @@ const Navbar = () => {
         <ul className="menu  text-lg ">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        
+        <div>
+          {user ? (
+            <div className="w-10 h-10 mr-2">
+              <img className="rounded-full" src={user.photoURL} alt="" />
+            </div>
+          ) : (
+            <div className="w-10   mr-2">
+              <img
+                className="rounded-full"
+                src="https://i.ibb.co/8b7zG7B/user.png"
+                alt=""
+              />
+            </div>
+          )}
+        </div>
+
+        <div>
+          {user ? (
+            <button onClick={handleSignOut} className="btn btn-primary">
+              Log out
+            </button>
+          ) : (
+            <Link to="/login">
+              <button className="btn btn-primary">Login</button>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -7,6 +7,9 @@ import BrandMovie from "../components/brandMovie";
 import MovieDetails from "../page/MovieDetails";
 import UpdatePage from "../page/UpdatePage";
 import Cart from "../page/Cart";
+import Login from "../page/Login";
+import SignUp from "../page/SignUp";
+import PrivateRout from "../Providers/PrivateRout";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/addMovies",
-        element: <AddMovies></AddMovies>,
+        element: (
+          <PrivateRout>
+            <AddMovies></AddMovies>
+          </PrivateRout>
+        ),
       },
       {
         path: "/movies/:brandName",
@@ -28,19 +35,37 @@ const router = createBrowserRouter([
         loader: () => fetch("http://localhost:5000/movies"),
       },
       {
-        // path: "updateMovie",
-        // element: <UpdatePage></UpdatePage>,
+        path: "/movie/:_id",
+        element: <UpdatePage></UpdatePage>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/movie/${params._id}`),
       },
       {
         path: "/details/:_id",
-        element: <MovieDetails></MovieDetails>,
+        element: (
+          <PrivateRout>
+            <MovieDetails></MovieDetails>
+          </PrivateRout>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/details/${params._id}`),
       },
       {
         path: "cart",
-        element: <Cart></Cart>,
+        element: (
+          <PrivateRout>
+            <Cart></Cart>
+          </PrivateRout>
+        ),
         loader: () => fetch("http://localhost:5000/cart"),
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "signUp",
+        element: <SignUp></SignUp>,
       },
     ],
   },
