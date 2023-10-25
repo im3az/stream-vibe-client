@@ -1,5 +1,36 @@
-const CartCard = ({ item }) => {
-  const { name, brand, type, price, rating, details, image } = item;
+import Swal from "sweetalert2";
+
+const CartCard = ({ item, onDelete }) => {
+  const { _id, name, brand, type, price, rating, details, image } = item;
+
+  const handleDelete = (id) => {
+    // console.log(id);
+
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, remove it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        fetch(`http://localhost:5000/cart/${id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (data.deletedCount > 0) {
+              Swal.fire("Removed!", "Movie has been remove.", "success");
+              onDelete(id);
+            }
+          });
+      }
+    });
+  };
   return (
     <div>
       <div className="card w-96 h-[700px] bg-base-100 shadow-xl">
@@ -10,12 +41,17 @@ const CartCard = ({ item }) => {
           <h2 className="card-title">{name}</h2>
           <div className="">
             <p className="mb-2 italic">
-            If you have a coupon code, please enter it in the box below
+              If you have a coupon code, please enter it in the box below
             </p>
             <textarea className="w-full h-10p-2 bg-gray-100 rounded"></textarea>
           </div>
           <div className="card-actions">
-            <button className="btn btn-warning">Delete</button>
+            <button
+              onClick={() => handleDelete(_id)}
+              className="btn btn-warning"
+            >
+              Remove
+            </button>
             <button className="btn btn-primary">Check Out</button>
           </div>
         </div>
