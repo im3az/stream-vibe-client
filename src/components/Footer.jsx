@@ -19,7 +19,7 @@ const Footer = () => {
                 className="inline-block max-h-10"
               />
             </a>
-            <p className="mx-auto mt-4 max-w-[528px] text-center text-[#636262]">
+            <p className="mx-auto mt-4 max-w-[528px] text-center text-gray-400">
               With StreamVibe, you can enjoy your favorite movies and TV shows
               anytime, anywhere. Our platform is designed to be compatible with
               a wide range of devices, ensuring that you never miss a moment of
@@ -51,14 +51,13 @@ const Footer = () => {
               >
                 Subscription
               </a>
-              
             </div>
             <h2>Connect with us with:</h2>
             {/* Social Links  */}
             <div className="mb-16 mt-1 flex gap-7 py-2.5">
               <a
                 href="#"
-                className="max-w-[24px] text-[#3a3a3a] transition hover:text-[#c9fd02]"
+                className="max-w-[24px] text-gray-700 transition hover:text-indigo-600"
               >
                 <svg
                   width="40"
@@ -77,11 +76,10 @@ const Footer = () => {
                   ></path>
                 </svg>
               </a>
-              
-              
+
               <a
                 href="#"
-                className="max-w-[24px] text-[#3a3a3a] transition hover:text-[#c9fd02]"
+                className="max-w-[24px] text-gray-700 transition hover:text-indigo-600"
               >
                 <svg
                   width="40"

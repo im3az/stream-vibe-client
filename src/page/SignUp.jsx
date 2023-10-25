@@ -119,7 +119,7 @@ const SignUp = () => {
               />
             </div>
             <div className="form-control mt-6">
-              <button className="btn text-white  bg-[#5726F8]">Sign Up</button>
+              <button className="btn text-white btn-primary">Sign Up</button>
             </div>
           </form>
           <div className="text-center font-semibold text-red-800">

@@ -5,7 +5,7 @@ import PriceChart from "../components/PriceChart";
 
 const Home = () => {
   return (
-    <div className="bg-[#EBE8E2] pb-16">
+    <div className="bg-stone-200 dark:bg-stone-600 pb-16">
       <Banner></Banner>
       <div className="max-w-[1600px] mx-auto">
         <Brands></Brands>

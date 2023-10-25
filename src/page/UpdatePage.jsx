@@ -6,8 +6,8 @@ const UpdatePage = () => {
   const { name, brand, type, price, rating, details, image } = loadedData;
 
   return (
-    <div className="bg-[#F4F3F0] min-h-screen p-24 text-center">
-      <h2 className="text-4xl text-[#1D232A] font-extrabold">Update Movie</h2>
+    <div className="bg-stone-200 min-h-screen p-24 text-center">
+      <h2 className="text-4xl text-gray-900 font-extrabold">Update Movie</h2>
       <form>
         {/* form name and brand name row */}
         <div className="md:flex mb-8">
