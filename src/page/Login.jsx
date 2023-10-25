@@ -70,9 +70,9 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 mx-auto">
+    <div className="min-h-screen  mx-auto">
       <div className="text-center">
-        <h1 className="text-5xl py-10 font-bold text-black">Login now!</h1>
+        <h1 className="text-5xl py-10 font-bold ">Login now!</h1>
       </div>
       <div className="hero ">
         <div className="card mt-5 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -124,19 +124,15 @@ const Login = () => {
 
             <div className="mt-3 grid text-center">
               <div>
-                <button onClick={handleGoogleLogin} className=" btn w-1/4">
-                  <img
-                    className="h-6 w-6"
-                    src="https://www.svgrepo.com/show/506498/google.svg"
-                    alt=""
-                  />
+                <button onClick={handleGoogleLogin} className=" btn btn-accent w-1/4">
+                 Google
                 </button>
               </div>
             </div>
           </div>
 
           <div className="sm:mx-auto sm:w-full sm:max-w-md pb-5">
-            <p className="mt-2 text-center text-base text-gray-600 max-w">
+            <p className="mt-2 text-center text-base  max-w">
               Or
               <Link
                 to="/signUp"

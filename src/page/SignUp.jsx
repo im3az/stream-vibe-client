@@ -63,9 +63,9 @@ const SignUp = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 mx-auto">
+    <div className="min-h-screen  mx-auto">
       <div className="text-center">
-        <h1 className="text-5xl py-10 font-bold text-black">Sign up now!</h1>
+        <h1 className="text-5xl py-10 font-bold ">Sign up now!</h1>
       </div>
       <div className="hero ">
         <div className="card mt-5 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -126,7 +126,7 @@ const SignUp = () => {
             {registerError && <p>{registerError}</p>}
           </div>
           <div className="sm:mx-auto sm:w-full sm:max-w-md pb-5">
-            <p className="mt-2 text-center text-base text-gray-600 max-w">
+            <p className="mt-2 text-center text-base max-w">
               Or
               <Link
                 to="/login"
