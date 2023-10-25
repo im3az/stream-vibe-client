@@ -27,7 +27,7 @@ const AddMovies = () => {
     // console.log(newMovie);
 
     // sending data to server
-    fetch("http://localhost:5000/movies", {
+    fetch("https://stream-vibe-server.vercel.app/movies", {
       method: "POST",
       headers: {
         "content-type": "application/json",

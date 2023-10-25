@@ -1,15 +1,43 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../firebase/firebase.config";
 
 const Login = () => {
   const { logIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+  const [loginError, setLoginError] = useState("");
+
+  const auth = getAuth(app);
+
+  const googleLogin = new GoogleAuthProvider();
+
+  const handleGoogleLogin = () => {
+    signInWithPopup(auth, googleLogin)
+      .then((result) => {
+        console.log(result.user);
+        if (result.user) {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Logged in",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    setLoginError("");
 
     const form = e.target;
 
@@ -37,6 +65,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.log(error);
+        setLoginError(error.message);
       });
   };
 
@@ -78,7 +107,7 @@ const Login = () => {
           </form>
 
           <div className="text-center font-semibold text-red-800">
-            {/* {loginError && <p>{loginError}</p>} */}
+            {loginError && <p>{loginError}</p>}
           </div>
 
           <div className="mt-6">
@@ -95,7 +124,7 @@ const Login = () => {
 
             <div className="mt-3 grid text-center">
               <div>
-                <button className=" btn w-1/4">
+                <button onClick={handleGoogleLogin} className=" btn w-1/4">
                   <img
                     className="h-6 w-6"
                     src="https://www.svgrepo.com/show/506498/google.svg"

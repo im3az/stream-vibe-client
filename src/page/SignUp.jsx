@@ -1,10 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { updateProfile } from "firebase/auth";
 
 const SignUp = () => {
   const { createUser } = useContext(AuthContext);
+  const [registerError, setRegisterError] = useState("");
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -14,6 +16,19 @@ const SignUp = () => {
     const image = form.image.value;
     const email = form.email.value;
     const password = form.password.value;
+
+    setRegisterError("");
+
+    if (password.length < 6) {
+      setRegisterError("Password must have at least 6 characters or more");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setRegisterError("Password has no capital letter");
+      return;
+    } else if (!/[^a-zA-Z0-9]/.test(password)) {
+      setRegisterError("Password has no special character.");
+      return;
+    }
 
     // const user = { name, image, email, password };
     // console.log(user);
@@ -25,7 +40,9 @@ const SignUp = () => {
         // if (!user.photoURL) {
         //   user.updateProfile(user, { photoURL: image });
         // }
-        console.log(user);
+        // console.log(user);
+
+        updateProfile(user, { displayName: name, photoURL: image });
 
         if (user) {
           Swal.fire({
@@ -36,9 +53,12 @@ const SignUp = () => {
             timer: 1500,
           });
         }
+
+        console.log(user);
       })
       .catch((error) => {
         console.log(error);
+        setRegisterError(error.message);
       });
   };
 
@@ -103,7 +123,7 @@ const SignUp = () => {
             </div>
           </form>
           <div className="text-center font-semibold text-red-800">
-            {/* {registerError && <p>{registerError}</p>} */}
+            {registerError && <p>{registerError}</p>}
           </div>
           <div className="sm:mx-auto sm:w-full sm:max-w-md pb-5">
             <p className="mt-2 text-center text-base text-gray-600 max-w">

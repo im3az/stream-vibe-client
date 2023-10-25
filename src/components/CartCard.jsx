@@ -17,7 +17,7 @@ const CartCard = ({ item, onDelete }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         // Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        fetch(`http://localhost:5000/cart/${id}`, {
+        fetch(`https://stream-vibe-server.vercel.app/cart/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

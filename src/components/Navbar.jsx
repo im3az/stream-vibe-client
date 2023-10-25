@@ -89,8 +89,31 @@ const Navbar = () => {
       <div className="navbar-end">
         <div>
           {user ? (
-            <div className="w-10 h-10 mr-2">
-              <img className="rounded-full" src={user.photoURL} alt="" />
+            // <div className="w-10 object-cover mr-2">
+            //   <img className="rounded-full" src={user.photoURL} alt="" />
+            // </div>
+            // <div className="avatar">
+            //   <div className="w-12 mr-2 rounded-full">
+            //     <img src={user.photoURL} />
+            //   </div>
+            // </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <div className="h-10 w-10">
+                <img
+                  className="h-full w-full rounded-full object-cover object-center "
+                  src={user.photoURL}
+                  alt=""
+                />
+              </div>
+              <div>
+                <div className="text-sm font-medium text-secondary-500">
+                  {user.displayName}
+                </div>
+                <div className="text-xs text-secondary-400">
+                  {user.email}
+                </div>
+              </div>
             </div>
           ) : (
             <div className="w-10   mr-2">
@@ -103,7 +126,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <div>
+        <div className="mx-3">
           {user ? (
             <button onClick={handleSignOut} className="btn btn-primary">
               Log out

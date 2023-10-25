@@ -1,5 +1,4 @@
-# StreamVive Website 
-
+# StreamVive Website [https://streamvibe-2d1b7.web.app/](https://streamvibe-2d1b7.web.app/).
 
 ## Key Features
 
@@ -12,5 +11,3 @@
 - **Brand Pages**: The project includes brand-specific pages where users can explore featured products and advertisements. Each product includes information such as images, names, brand names, types, prices, and ratings. In cases where a brand has no available products, a relevant message is displayed.
 
 - **Authentication and User Profiles**: The website implements email and password-based authentication. Users can register, log in, and toggle between registration and login views. After logging in, the user's name, profile picture, and a logout button appear on the navbar.
-
-

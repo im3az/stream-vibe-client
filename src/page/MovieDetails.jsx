@@ -6,7 +6,7 @@ const MovieDetails = () => {
   //   console.log(loadedData);
   const handleAddToCart = () => {
 // sending data to server
-    fetch("http://localhost:5000/cart", {
+    fetch("https://stream-vibe-server.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -32,13 +32,13 @@ const router = createBrowserRouter([
       {
         path: "/movies/:brandName",
         element: <BrandMovie></BrandMovie>,
-        loader: () => fetch("http://localhost:5000/movies"),
+        loader: () => fetch("https://stream-vibe-server.vercel.app/movies"),
       },
       {
         path: "/movie/:_id",
         element: <UpdatePage></UpdatePage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/movie/${params._id}`),
+          fetch(`https://stream-vibe-server.vercel.app/movie/${params._id}`),
       },
       {
         path: "/details/:_id",
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
           </PrivateRout>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/details/${params._id}`),
+          fetch(`https://stream-vibe-server.vercel.app/details/${params._id}`),
       },
       {
         path: "cart",
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
             <Cart></Cart>
           </PrivateRout>
         ),
-        loader: () => fetch("http://localhost:5000/cart"),
+        loader: () => fetch("https://stream-vibe-server.vercel.app/cart"),
       },
       {
         path: "/login",
